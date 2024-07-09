@@ -138,6 +138,7 @@ header{
 .phone-number__link--before{
     margin-bottom: 12px;
     position: relative;
+    padding-left: 25px;
 }
 
 .phone-number__link--before::before{
@@ -147,8 +148,13 @@ header{
     width: 16px;
     height: 17px;
     top: 3px;
-    left: -25px;
+    /* left: -25px; */
+    left: 0;
     position: absolute;
+}
+
+.phone-number__link{
+    padding-left: 25px;
 }
 
 .phone-number__link--before,
@@ -175,6 +181,7 @@ header{
     font-size: 16rem;
     color: #25252c;
     position: relative;
+    padding-left: 25px;
 }
 
 .contacts__skype:hover,
@@ -188,13 +195,14 @@ header{
     background-position: -87px 0;
     width: 25px;
     height: 25px;
-    left: -25px;
+    left: 0;
     top: 2px;
     position: absolute;
 }
 
 .contacts__email{
     margin-bottom: 12px;
+    padding-left: 25px;
 }
 
 .contacts__email::before{
@@ -203,7 +211,7 @@ header{
     background-position: -68px 0;
     width: 19px;
     height: 20px;
-    left: -25px;
+    left: 0;
     top: 3px;
     position: absolute;
 }
