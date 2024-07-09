@@ -43,9 +43,18 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+header{
+/*     position: sticky;
+    top: 0; */
+    background-color: #fff;
+}
+
 .header-line{
     background-color:#1f1f56 ;
     padding: 18px 0px 15px;
+/*     position: sticky;
+    top: 0; */
 }
 .header-nav{
     width: 45%;
@@ -340,7 +349,7 @@ main{
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding: 15px 40px 15px 10px;
+    padding: 15px 40px 15px 15px;
     background-color: #1f1f56;
     border-radius: 3px 3px 0px 0px;
 }
@@ -380,6 +389,11 @@ footer{
 .footer-line__copy{
     font-size: 13rem;
     color: #9999a6;
+}
+
+.aside-menu{
+    position: sticky;
+    top: 15px;
 }
 
 .aside-menu-title__heading{
