@@ -190,7 +190,7 @@ header{
 }
 
 .main-info__more-info {
-    padding: 5px 10px 5px 3px;
+    padding: 5px 10px 5px 0;
     color: #fd8300;
     font-weight: bold;
     background-image: linear-gradient(90deg,white 50%, #fd8300 50%);
@@ -203,6 +203,7 @@ header{
 .main-info__more-info:hover {
     background-position: -100% 0;
     color: #fff;
+    text-decoration: underline;
 }
 
 /* table{
