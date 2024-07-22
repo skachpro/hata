@@ -88,6 +88,7 @@ header{
 .personal-data__name,
 .personal-data__phone-number,
 .for-texting__a-lot-of-text{
+    padding-left: 15px;
     margin-bottom: 10px;
     border-radius: 3px;
     background-color: #ffffff;
