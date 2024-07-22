@@ -198,12 +198,13 @@ header{
     text-decoration: none;
     border-radius:0 15px 15px 0;
     transition: 0.3s ease-in-out;
+    text-decoration: underline;
 }
 
 .main-info__more-info:hover {
     background-position: -100% 0;
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* table{

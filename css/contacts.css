@@ -1,0 +1,156 @@
+header{
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 35px;
+}
+
+.blok-contacts{
+    margin-bottom: 20px;
+}
+
+.main-heading{
+    margin-bottom: 25px;
+    font-size: 24rem;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.office,
+.consult,
+.rekvizity{
+    display: flex;
+    flex-direction: column;
+}
+
+.blok-contacts__small-text,
+.blok-contacts__link-phone,
+.blok-contacts__link-email{
+    margin-bottom: 10px;
+}
+
+.blok-contacts__heading{
+    margin-bottom: 20px;
+    font-size: 14rem;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.blok-contacts__small-text{
+    font-size: 14rem;
+    line-height: 21rem;
+    color: #666;
+}
+.blok-contacts__link-phone{
+    font-size: 18rem;
+    color: #25252c;
+    font-weight: bold;
+    text-decoration: none;
+}
+.blok-contacts__link-email{
+    font-size: 16rem;
+    color: #25252c;
+}
+
+.main-line{
+    margin-bottom: 35px;
+}
+
+.blank{
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.map{
+    min-width: 470px;
+    height: 300px;
+    background-image: url(../img/map.png);
+    background-size: cover;
+}
+
+.forms{
+    width: 100%;
+}
+
+.forms__heading{
+    font-size: 14rem;
+    line-height: 24rem;
+    margin-bottom: 20px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.for-texting__about{
+    display: inline-block;
+    width: 100%;
+}
+.for-texting__about,
+.personal-data__name,
+.personal-data__phone-number,
+.for-texting__a-lot-of-text{
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+    min-height: 40px;
+    box-sizing: border-box;
+}
+
+.personal-data__name{
+    width: 50%;
+}
+.personal-data__phone-number{
+    width: 50%;
+} 
+.personal-data{
+    gap: 10px;
+}
+
+/* .personal-data{
+    margin-bottom: 10px;
+}
+.for-texting{
+    margin-bottom: 10px;
+} */
+
+.for-texting__a-lot-of-text{
+    width: 100%;
+    min-height: 105px;
+}
+
+.submit{
+    padding: 15px 30px;
+    border-radius: 35px;
+    border: none;
+    background-color: #fd8300;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-size: 14rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.submit:hover{
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #fd8300;
+    color: #fd8300;
+}
+
+.submit-checkbox{
+    width: 70%;
+    align-items: center;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#news-seneder-verif{
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid #c5c5d4;
+}
