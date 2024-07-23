@@ -95,6 +95,22 @@ header{
     border: 1px solid #c5c5d4;
     min-height: 40px;
     box-sizing: border-box;
+    outline: none;
+}
+
+.for-texting__a-lot-of-text{
+    padding-top: 10px;
+    resize: vertical;
+}
+
+.for-texting__about::placeholder,
+.personal-data__name::placeholder,
+.personal-data__phone-number::placeholder,
+.for-texting__a-lot-of-text::placeholder{
+    font-size: 13rem;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
 }
 
 .personal-data__name{
@@ -150,8 +166,29 @@ header{
 }
 
 #news-seneder-verif{
+    appearance: none;
     width: 15px;
     height: 15px;
     border-radius: 3px;
+    background-color: #ffffff;
     border: 1px solid #c5c5d4;
+    background-color: #fff;
+}
+
+label{
+    position: relative;
+}
+
+#news-seneder-verif:checked+label:before{
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 3px;
+    left: -28.2px;
+    top: 4px;
+    border: 3px solid #1f1f56;
+    border-top: none;
+    border-right: none;
+    border-radius: 1.2px;
+    transform: rotate(-45deg);
 }
