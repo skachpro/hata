@@ -561,8 +561,97 @@ footer {
     flex-grow: 1;
 }
 
+.burger>.burger_list{
+    display: none;
+}
+.burger{
+    position: relative;
+    width: 30px;
+    height: 3px;
+    /* padding: 25px 0px; */
+    border-radius: 20px;
+    background-color: #fff;
+    
+    
+}
+.click{
+    appearance: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -18px;
+    left: -5px;
+    cursor: pointer;
+    filter: opacity(0);
+    z-index: 1;
+}
+.burger::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 30px;
+    height: 3px;
+    bottom: 10px;
+}
+.burger::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 20px;
+    top: 10px;
+}
 
+.burger_list.add{
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    width: 70vw;
+    height: 100vh;
+    background-color: #1f1f56;
+    z-index: 1;
+}
+.burger_list{
+    padding-top: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+.burger_list li{
+    margin-bottom: 30px;
+}
+
+.close{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.close::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 20px;
+    top: 10px;
+    transform: rotate(45deg);
+}
   
+.close:before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 20px;
+    top: 10px;
+    /* left: 3px; */
+    transform: rotate(-45deg);
+}
 
 @media screen and (min-width: 320px){
     html{
@@ -627,8 +716,14 @@ footer {
         gap: 0;
     }
     
+    
 }
 
+@media screen and (min-width: 1023px){
+    .burger{
+        display: none;
+    }
+}
 @media screen and (min-width: 1024px){
     .header-menu{
         display: flex;
