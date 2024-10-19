@@ -1,10 +1,16 @@
+html{
+    font-size: 1px;
+}
 header{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     margin-bottom: 35px;
 }
-
+body{
+    font-size: 14rem;
+}
 .blok-contacts{
     margin-bottom: 20px;
+    gap: 20px;
 }
 
 .main-heading{
@@ -58,17 +64,24 @@ header{
 .blank{
     gap: 30px;
     margin-bottom: 45px;
+    flex-wrap: nowrap;
 }
 
 .map{
-    min-width: 470px;
-    height: 300px;
+    width: 80%;
+    min-width: 150px;
     background-image: url(../img/map.png);
     background-size: cover;
+    flex-grow: 0;
+}
+iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .forms{
     width: 100%;
+    flex-grow: 0;
 }
 
 .forms__heading{
@@ -155,13 +168,15 @@ header{
 }
 
 .submit-checkbox{
-    width: 65%;
+    /* width: 65%; */
+    gap: 20px;
     align-items: center;
 }
 
 .checkbox{
     display: flex;
     align-items: center;
+    flex-grow: 0;
     gap: 15px;
 }
 
@@ -191,4 +206,32 @@ label{
     border-right: none;
     border-radius: 1.2px;
     transform: rotate(-45deg);
+}
+@media screen and (min-width: 320px){
+    .blank{
+        flex-wrap: wrap;
+    }
+    .map{
+        flex-grow: 1;
+    }
+    .blok-contacts__small-text,
+    .blok-contacts__link-phone,
+    .blok-contacts__link-email{
+        margin-bottom: 5px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .submit{
+        flex-grow: 1;
+    }
+}
+@media screen and (min-width: 768px) {
+    .blank{
+        flex-wrap: nowrap;
+    }
+    .blok-contacts__small-text,
+    .blok-contacts__link-phone,
+    .blok-contacts__link-email{
+        margin-bottom: 10px;
+    }
 }

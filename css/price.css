@@ -14,7 +14,9 @@ header{
     justify-content: space-between;
     /* width: 50%; */
 }
-
+.header-nav{
+    width: 40%;
+}
 .nav-menu,
 .nav-menu-podmenu{
     list-style: none;
@@ -27,7 +29,7 @@ header{
 .menushka a{
     text-decoration: none;
     color: #b1b1d2;
-    font-size: 14px;
+    font-size: 14rem;
 }
 
 .menushka a:hover {
@@ -50,7 +52,7 @@ header{
 .nav-menu a{
     text-decoration: none;
     border-bottom: none;
-    font-size: 14px;
+    font-size: 14rem;
     color: #25252c;
 }
 
@@ -196,6 +198,7 @@ header{
     background-image: linear-gradient(90deg,white 50%, #fd8300 50%);
     background-size: 200%;
     text-decoration: none;
+    line-height: 20rem;
     border-radius:0 15px 15px 0;
     transition: 0.3s ease-in-out;
     text-decoration: underline;
@@ -249,6 +252,7 @@ tbody{
 .plosha{
     border: none;
     border-right: 0.75px solid #274569; 
+    padding: none;
 }
 
 .kilkist{
@@ -272,6 +276,11 @@ table,th,td{
 table{
     width: 100%;
     margin-bottom: 20px;
+    overflow-x: scroll;
+    min-width: 500px;
+}
+.table-container{
+    overflow-x: scroll;
 }
 
 table tbody tr:hover{
@@ -284,7 +293,7 @@ table tr:hover>td{
 }
 
 table td{
-    font-size: 14px;
+    font-size: 14rem;
     color: #666666;
     border: 1px solid #cecedd;
 }
@@ -299,13 +308,15 @@ table tr:last-child td:last-child{
 
 th{
     color: #fff;
-    font-size: 14px;
+    font-size: 14rem;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
 tr:first-child>th:first-child{
-    padding: 25px 150px 25px 20px;
+    /* padding: 25px 150px 25px 20px; */
+    max-width: 350px;
+    height: 80px;
 }
 
 tr:first-child>th:last-child{
@@ -318,7 +329,9 @@ tr:first-child>th:nth-child(2){
 }
 
 tr:last-child>th{
-    padding: 12px 40px;
+    padding: 12px 0px;
+    max-width: 380px;
+    min-width: 170px;
     text-align: center;
 }
 
@@ -329,6 +342,7 @@ tr td:first-child{
 tr td:first-child,th:first-child{
     text-align: left;
     padding: 15px 0px 15px 20px;
+    min-width:180px
 }
 
 tr td:nth-child(2){
@@ -370,11 +384,28 @@ tbody tr:last-child td:first-child{
 .last-left-cell{
    border-radius: 0 0 0 3px;
 } */
-
+/* 
 .card {
     width: 22%;
-}
+} */
 
 .popular-projects{
     margin-bottom:50px;
+}
+@media screen and(min-width: 320px) {
+    html{
+        font-size: 0.8px;
+    }
+}
+@media screen and (max-width: 768px){
+    .header-nav{
+        display: none;
+    }
+    .header-line-content{
+        /* justify-content: end; */
+    }
+    .card{
+        flex-basis: 230px;
+        max-width: 600px;
+    }
 }

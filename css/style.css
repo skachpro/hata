@@ -51,9 +51,12 @@ sup {
 .flex-sb {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-
+main *{
+    flex-grow: 1;
+}
 header {
     background-color: #fff;
 }
@@ -64,7 +67,7 @@ header {
 }
 
 .header-nav {
-    width: 40%;
+    /* width: 40%; */
 }
 
 .header-menu {
@@ -77,11 +80,13 @@ header {
 .main-content{
     align-items: flex-start;
 }
+.hide{
+    display: none;
+}
 
 .header-line-content,
 .header-main-content {
     align-items: center;
-
 }
 
 .header-main-content{
@@ -154,11 +159,14 @@ header {
 }
 
 .phone-number {
+    display: inline-block;
+    max-width: 220px;
     justify-content: start;
     flex-direction: column;
 }
 
 .phone-number__link--icon {
+    display: inline-block;
     margin-bottom: 2px;
     position: relative;
     padding-left: 25px;
@@ -176,6 +184,7 @@ header {
 }
 
 .phone-number__link {
+    display: inline-block;
     padding-left: 25px;
 }
 
@@ -194,12 +203,17 @@ header {
 }
 
 .contacts {
+
     justify-content: start;
     flex-direction: column;
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
+/* .contacts a{
+    display: inline-block;
+} */
 
 .contacts__skype{
+    /* display: inline-block; */
     text-decoration: none;
 }
 
@@ -209,6 +223,8 @@ header {
 
 .contacts__skype,
 .contacts__email {
+    display: inline-block;
+    flex-grow: 0;
     font-size: 16rem;
     color: #25252c;
     position: relative;
@@ -250,6 +266,7 @@ header {
 .header-main__button {
     display: inline-block;
     align-items: center;
+    text-align: center;
     text-decoration: none;
     padding: 16px 30px;
     color: #000;
@@ -370,9 +387,14 @@ main {
     font-weight: 700;
     font-family: "Roboto Slab";
 }
-
+.cards{
+    flex-wrap: wrap;
+    align-items: center;
+}
 .card {
     width: 30%;
+    min-width: 200px;
+    flex-basis: 230px;
     position: relative;
 }
 
@@ -433,6 +455,7 @@ footer {
 }
 
 .footer-content {
+    gap: 20px;
     padding: 30px 0 30px;
 }
 
@@ -533,4 +556,98 @@ footer {
 
 .brdr {
     border-radius: 0px 0px 3px 3px;
+}
+.card{
+    flex-grow: 1;
+}
+
+
+  
+
+@media screen and (min-width: 320px){
+    html{
+        /* font-size: 0.9px; */
+    }
+    
+    .wrapper{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .flex-sb:not(.header-main-content, .header-line-content, .header-nav, .header-menu, .messangers){
+        /* justify-content: center; */
+        /* width: 100%; */
+    }
+    .header-line{
+        /* padding: 15px 25px; */
+    }
+    .header-main-content{
+        gap: 20px;
+    }
+    .header-main-content::before{
+        /* transform: rotate(90deg); */
+        display: none;
+    }
+    .header-menu{
+        display: none;
+    }
+    .messangers{
+        width: 40%;
+        gap: 20px;
+    }
+    
+    h1{
+        font-size: 20rem;
+    }
+    .main-content{
+        gap: 20px;
+    }
+    /* div{
+        flex-grow: 1;
+    } */
+    .cards{
+        gap: 20px;
+    }
+    
+    .header-main__button{
+        flex-grow: 1;
+        
+    }
+    .aside-menu{
+        flex-grow: 1;
+    }
+    .footer-content{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .messangers{
+        width: 20%;
+        gap: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    .header-menu{
+        display: flex;
+        width: 100%;
+        gap: 25px;
+    }
+    
+}
+@media screen and (min-width: 1440px) {
+    .header-main-content::before{
+        display: block;
+
+    }
+    .messangers{
+        width: 8%;
+        gap: 0;
+    }
+    .header-main__button{
+        flex-grow: 0;
+    }
+    
 }
