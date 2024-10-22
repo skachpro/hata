@@ -1,0 +1,26 @@
+@media screen and(min-width: 320px) {
+    html{
+        font-size: 0.8px;
+    }
+}
+@media screen and (max-width: 768px){
+    .header-nav{
+        display: none;
+    }
+    
+    .card{
+        flex-basis: 230px;
+        max-width: 600px;
+    }
+    .burger{
+        display: block;
+    }
+}
+@media screen and (max-width: 1071px) {
+    .burger{
+        display: block;
+    }
+    .header-menu{
+        display: none;
+    }
+}

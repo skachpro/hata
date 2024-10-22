@@ -7,7 +7,7 @@ header{
 .header-menu__link-hovering-place-fore-transparent-menu{
     position: relative;
 }
-.menushka {
+.header-menu {
     position: relative;
     z-index: 1;
     display: flex;
@@ -22,17 +22,17 @@ header{
     list-style: none;
 }
 
-.menushka{
+.header-menu{
     list-style: none;
 }
 
-.menushka a{
+.header-menu a{
     text-decoration: none;
     color: #b1b1d2;
     font-size: 14rem;
 }
 
-.menushka a:hover {
+.header-menu a:hover {
     color: #fd8300;
 }
 
@@ -95,7 +95,7 @@ header{
     padding-left: 20px;
 }
 
-.menushka>li:hover>.nav-menu{
+.header-menu>li:hover>.nav-menu{
     display: block;
 } 
 
@@ -391,21 +391,4 @@ tbody tr:last-child td:first-child{
 
 .popular-projects{
     margin-bottom:50px;
-}
-@media screen and(min-width: 320px) {
-    html{
-        font-size: 0.8px;
-    }
-}
-@media screen and (max-width: 768px){
-    .header-nav{
-        display: none;
-    }
-    .header-line-content{
-        /* justify-content: end; */
-    }
-    .card{
-        flex-basis: 230px;
-        max-width: 600px;
-    }
 }
