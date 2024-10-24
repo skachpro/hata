@@ -13,7 +13,7 @@
 }
 @media screen and (min-width: 1024px){
     .submit{
-        flex-grow: 0;
+        flex-grow: 1;
     }
 }
 @media screen and (min-width: 768px) {
@@ -29,5 +29,8 @@
 @media screen and (max-width: 768px){
     .forms{
         max-width: none;
+    }
+    .personal-data{
+        flex-wrap: wrap;
     }
 }

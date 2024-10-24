@@ -73,6 +73,7 @@ body{
     background-image: url(../img/map.png);
     background-size: cover;
     min-height: 300px;
+    max-height: 300px;
     flex-grow: 0;
 }
 iframe{
@@ -177,7 +178,8 @@ iframe{
 }
 
 .submit-checkbox{
-    width: 90%;
+    /* width: 90%; */
+    flex-wrap: wrap-reverse;
     gap: 20px;
     align-items: center;
 }
