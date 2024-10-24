@@ -91,6 +91,8 @@ header {
 
 .header-main-content{
     position: relative;
+    align-items: center;
+    
 }
 .header-main-content::before{
     content: '';
@@ -713,6 +715,7 @@ footer {
 @media screen and (max-width: 445px) and (min-width: 435px){
     .header-main-content{
        flex-direction: column;
+       gap: 30px;
     }
     .header-main__button{
         flex-grow: 1;
@@ -727,6 +730,18 @@ footer {
     
     
 }
+@media screen and (max-width: 768px){
+    .header-main__button{
+        max-width: 400px;
+    }
+    
+}
+@media screen and (max-width: 768px) and (min-width: 707px){
+    .header-main-content{
+        justify-content: center;
+        /* gap: 50px; */
+    }
+}
 
 @media screen and (min-width: 1023px){
     .burger{
@@ -740,6 +755,14 @@ footer {
         gap: 25px;
     }
     
+}
+@media screen and (max-width: 1000px) and (min-width: 800px){
+    .header-main-content{
+        justify-content: center;
+    }
+    .header-main__button{
+        max-width: 600px;
+    }
 }
 @media screen and (min-width: 965px) {
     .header-main-content::before{
