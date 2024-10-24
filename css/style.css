@@ -732,7 +732,7 @@ footer {
 }
 @media screen and (max-width: 768px){
     .header-main__button{
-        max-width: 400px;
+        max-width: 85%;
     }
     
 }

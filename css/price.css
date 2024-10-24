@@ -3,7 +3,9 @@ header{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     margin-bottom: 30px;
 }
-
+main *{
+    flex-grow: 0;
+}
 .header-menu__link-hovering-place-fore-transparent-menu{
     position: relative;
 }
@@ -275,17 +277,22 @@ table,th,td{
 
 table{
     width: 100%;
-    margin-bottom: 20px;
-    overflow-x: scroll;
+    /* margin-bottom: 20px; */
+    overflow-x: auto;
     min-width: 500px;
 }
 .table-container{
-    overflow-x: scroll;
+    overflow-x: auto;
+    margin-bottom: 20px;
 }
 
 table tbody tr:hover{
     background-color: #fd8300;
     cursor: pointer;
+}
+table tbody tr:hover td{
+    border-left: none;
+    border: 1px;
 }
 
 table tr:hover>td{

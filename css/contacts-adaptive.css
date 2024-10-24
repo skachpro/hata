@@ -13,7 +13,7 @@
 }
 @media screen and (min-width: 1024px){
     .submit{
-        flex-grow: 1;
+        flex-grow: 0;
     }
 }
 @media screen and (min-width: 768px) {
@@ -24,5 +24,10 @@
     .blok-contacts__link-phone,
     .blok-contacts__link-email{
         margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .forms{
+        max-width: none;
     }
 }
