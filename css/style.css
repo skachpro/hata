@@ -112,6 +112,7 @@ header {
 }
 
 .header-menu__link:hover {
+    color: #fd8300;
     text-decoration: underline;
 }
 
