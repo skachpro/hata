@@ -702,12 +702,19 @@ footer {
     
     .header-main__button{
         flex-grow: 1;
-        
     }
     .aside-menu{
         flex-grow: 1;
     }
     .footer-content{
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width: 445px) and (min-width: 435px){
+    .header-main-content{
+       flex-direction: column;
+    }
+    .header-main__button{
         flex-grow: 1;
     }
 }
@@ -734,7 +741,7 @@ footer {
     }
     
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 965px) {
     .header-main-content::before{
         display: block;
 
@@ -746,5 +753,7 @@ footer {
     .header-main__button{
         flex-grow: 0;
     }
-    
+    .header-main__button{
+        flex-grow: 0;
+    }
 }
