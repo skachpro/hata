@@ -83,8 +83,7 @@ iframe{
 
 .forms{
     width: 100%;
-    max-width: 500px;
-    flex-grow: 0;
+    flex-grow:1;
 }
 
 .forms__heading{

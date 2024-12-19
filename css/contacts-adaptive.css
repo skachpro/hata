@@ -17,6 +17,9 @@
     }
 }
 @media screen and (min-width: 768px) {
+    .map{
+        max-width: 50%;
+    }
     .blank{
         flex-wrap: nowrap;
     }
@@ -25,10 +28,8 @@
     .blok-contacts__link-email{
         margin-bottom: 10px;
     }
-}
-@media screen and (max-width: 768px){
     .forms{
-        max-width: none;
+        max-width: 50%;
     }
     .personal-data{
         flex-wrap: wrap;
