@@ -7,7 +7,6 @@ burger.onclick = function() {
 }
 
 close.onclick = function(){
-    console.log('1');
     burgerList.classList.remove('add');
 }
 
